@@ -1,6 +1,9 @@
 
 package esprit.groupe.pkg2cinfo2;
 
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 public class Methodes {
   // Attributs
     private static final int MAX_VALUE = Integer.MAX_VALUE;
@@ -26,7 +29,8 @@ public class Methodes {
         for (int i = 1; i <= nombre; i++) {
             factorielle *= i;
         }
-        return factorielle;
+
+                return factorielle;
     }
 
     public static boolean estPair(int nombre) {
@@ -45,8 +49,13 @@ public static boolean estPremier(int nombre) {
     return true;
 }
 
-    public static String inverserChaine(String chaine) {
-        StringBuilder sb = new StringBuilder(chaine);
-        return sb.reverse().toString();
+    public static String inverserChaine(String str) {
+//        StringBuilder sb = new StringBuilder(chaine);
+//        return sb.reverse().toString();
+
+        return IntStream.range(0, str.length())
+                .mapToObj(i -> str.charAt(str.length() - i - 1))
+                .map(String::valueOf)
+                .collect(Collectors.joining());
     }
 }
