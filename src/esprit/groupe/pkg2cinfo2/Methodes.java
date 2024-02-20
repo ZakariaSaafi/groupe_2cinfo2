@@ -8,8 +8,8 @@ public class Methodes {
     // Méthodes
     public static int sommeTableau(int[] nombres) {
         int somme = 0;
-        for (int nombre : nombres) {
-            somme += nombre;
+        for (int i = 0; i < nombres.length; i++) {
+            somme += nombres[i];
         }
         /**
         * create conflict for the pull requests
