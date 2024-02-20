@@ -6,10 +6,17 @@ public class Methodes {
     private static final int MAX_VALUE = Integer.MAX_VALUE;
 
     // Méthodes
-    public static int sommeTableau(int[] nombres) {
+    /*public static int sommeTableau(int[] nombres) {
         int somme = 0;
         for (int nombre : nombres) {
             somme += nombre;
+        }
+        return somme;
+    }*/
+    public static int sommeTableau(int[] nombres) {
+        int somme = 0;
+        for (int i = 0; i < nombres.length; i++) {
+            somme += nombres[i];
         }
         return somme;
     }
