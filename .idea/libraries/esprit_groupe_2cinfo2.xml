@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="esprit.groupe.2cinfo2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/esprit.groupe.2cinfo2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

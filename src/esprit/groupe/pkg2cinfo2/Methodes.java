@@ -1,6 +1,9 @@
 
 package esprit.groupe.pkg2cinfo2;
 
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 public class Methodes {
   // Attributs
     private static final int MAX_VALUE = Integer.MAX_VALUE;
@@ -29,7 +32,8 @@ public class Methodes {
         for (int i = 1; i <= nombre; i++) {
             factorielle *= i;
         }
-        return factorielle;
+
+                return factorielle;
     }
 
     public static boolean estPair(int nombre) {
