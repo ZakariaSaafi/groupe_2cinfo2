@@ -11,6 +11,9 @@ public class Methodes {
         for (int i = 0; i < nombres.length; i++) {
             somme += nombres[i];
         }
+        /**
+        * create conflict for the pull requests
+        */
         return somme;
     }
 
@@ -47,6 +50,9 @@ public static boolean estPremier(int nombre) {
 
     public static String inverserChaine(String chaine) {
         StringBuilder sb = new StringBuilder(chaine);
+        /**
+        * create conflict for the pull requests
+        */
         return sb.reverse().toString();
     }
 }
