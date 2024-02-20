@@ -14,6 +14,9 @@ public class Methodes {
         for (int nombre : nombres) {
             somme += nombre;
         }
+        /**
+        * create conflict for the pull requests
+        */
         return somme;
     }
 
@@ -49,13 +52,11 @@ public static boolean estPremier(int nombre) {
     return true;
 }
 
-    public static String inverserChaine(String str) {
-//        StringBuilder sb = new StringBuilder(chaine);
-//        return sb.reverse().toString();
-
-        return IntStream.range(0, str.length())
-                .mapToObj(i -> str.charAt(str.length() - i - 1))
-                .map(String::valueOf)
-                .collect(Collectors.joining());
+    public static String inverserChaine(String chaine) {
+        StringBuilder sb = new StringBuilder(chaine);
+        /**
+        * create conflict for the pull requests
+        */
+        return sb.reverse().toString();
     }
 }
