@@ -50,3 +50,9 @@ public static boolean estPremier(int nombre) {
         return sb.reverse().toString();
     }
 }
+
+
+
+/**
+ * create conflict for the pull requests
+ */
