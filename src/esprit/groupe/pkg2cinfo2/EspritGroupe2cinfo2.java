@@ -12,6 +12,11 @@ public class EspritGroupe2cinfo2 {
         System.out.println("Le nombre 10 est-il pair ? " + Methodes.estPair(10));
         System.out.println("Le nombre 13 est-il premier ? " + Methodes.estPremier(13));
         System.out.println("Chaîne inversée : " + Methodes.inverserChaine("Bonjour"));
+        System.out.println("Le nombre maximale du tableau  : " + Methodes.MaxElementInArray(nombres));
+        Methodes.sortIntArray(nombres);
+        System.out.println("Le tableau trier  : " + nombres);
+        System.out.println("Le racine carré de 9 : " + Methodes.calculateSquareRoot(9));
+
     }
     
 }
