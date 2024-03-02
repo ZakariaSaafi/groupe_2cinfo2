@@ -126,6 +126,8 @@ public static boolean estPremier(int nombre) {
             int temp = array[minIndex];
             array[minIndex] = array[i];
             array[i] = temp;
+
+            //This one is not working please fix it (Helmi :) )
         }
     }
     public static double calculateSquareRoot(double number) {
