@@ -12,6 +12,8 @@ public class EspritGroupe2cinfo2 {
         System.out.println("Le nombre 10 est-il pair ? " + Methodes.estPair(10));
         System.out.println("Le nombre 13 est-il premier ? " + Methodes.estPremier(13));
         System.out.println("Chaîne inversée : " + Methodes.inverserChaine("Bonjour"));
+        System.out.println("3 a la puissance 5 est: " + HelmiBacha.calculerPuissance(3,5));
+
     }
     
 }

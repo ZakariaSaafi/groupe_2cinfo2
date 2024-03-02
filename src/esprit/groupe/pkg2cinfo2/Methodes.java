@@ -59,4 +59,5 @@ public static boolean estPremier(int nombre) {
         */
         return sb.reverse().toString();
     }
+
 }
