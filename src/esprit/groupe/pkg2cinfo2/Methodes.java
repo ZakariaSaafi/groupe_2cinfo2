@@ -60,6 +60,7 @@ public static boolean estPremier(int nombre) {
         return sb.reverse().toString();
     }
 
+
     public static int calculerPuissance(int base, int exposant) {
         int resultat = 1;
 
@@ -98,4 +99,38 @@ public static boolean estPremier(int nombre) {
 
         return new String(charArray);
     }
+
+        public static int MaxElementInArray(int[] array) {
+
+            int max = array[0];
+
+            for (int i = 1; i < array.length; i++) {
+                if (array[i] > max) {
+                    max = array[i];
+                }
+            }
+
+            return max;
+        }
+
+    public static void sortIntArray(int[] array) {
+        int n = array.length;
+
+        for (int i = 0; i < n - 1; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < n; j++) {
+                if (array[j] < array[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            int temp = array[minIndex];
+            array[minIndex] = array[i];
+            array[i] = temp;
+        }
+    }
+    public static double calculateSquareRoot(double number) {
+        return Math.sqrt(number);
+    }
+
+
 }
