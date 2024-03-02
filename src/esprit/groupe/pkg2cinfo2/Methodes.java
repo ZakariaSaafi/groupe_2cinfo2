@@ -86,5 +86,16 @@ public static boolean estPremier(int nombre) {
         } else {
             return calculerPGCD(b, a % b);
         }
+    }
+    public static String convertToUpperCase(String str) {
+        char[] charArray = str.toCharArray();
 
-    }}
+        for (int i = 0; i < charArray.length; i++) {
+            if (Character.isLowerCase(charArray[i])) {
+                charArray[i] = Character.toUpperCase(charArray[i]);
+            }
+        }
+
+        return new String(charArray);
+    }
+}
